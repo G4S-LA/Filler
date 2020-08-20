@@ -39,21 +39,43 @@ SRC = ft_atoi.c ft_putchar.c ft_strlen.c \
 		ft_isspace.c ft_islower.c ft_isupper.c \
 		ft_numwords.c ft_isprime.c ft_sqrt.c ft_freememmass.c get_next_line.c
 
-OBJ = $(SRC:.c=.o)
+HEADERS_DIR = includes/
+INCLUDES = -I $(HEADERS_DIR)
+HEADERS_LIST = libft.h
 
+HEADERS = $(addprefix $(HEADERS_DIR), $(HEADERS_LIST))
+
+SOURCES_DIR = src/
+
+SOURCES = $(addprefix $(SOURCES_DIR), $(SRC))
+
+
+
+OBJECTS_LIST = $(patsubst %.c, %.o, $(SRC))
+OBJECTS_DIR = obj/
+OBJECTS = $(addprefix $(OBJECTS_DIR), $(OBJECTS_LIST))
+	
 all: $(NAME)
 
-$(NAME): $(OBJ)
-	ar -rc $(NAME) $(OBJ)
-	ranlib $(NAME)
+$(NAME): $(OBJECTS_DIR) $(OBJECTS)
+	@ar rc $@ $(OBJECTS)
+	@ranlib $@
 
-%.o: %.c $(INC)
-	gcc -c $(FLAGS) $< -I $(INC)
+$(OBJECTS_DIR):
+	@mkdir -p $(OBJECTS_DIR)
+
+$(OBJECTS_DIR)%.o : $(SOURCES_DIR)%.c $(HEADERS)
+	@gcc $(FLAGS) -c $(INCLUDES) $< -o $@
 
 clean:
-	rm -f $(OBJ)
+	@rm -rf $(OBJECTS_DIR)
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(LIBFT)
+	@rm -f $(NAME)
 
-re: fclean all
+re:
+	@$(MAKE) fclean
+	@$(MAKE) all
+
+.PHONY: all clean fclean re
