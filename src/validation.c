@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "tetriminos.h"
+#include "../includes/tetriminos.h"
 
 int			g_m[4][2];
 int			g_all;
@@ -47,10 +47,8 @@ int			links(void)
 int			size_and_hash(char *str, int *hesh, int y)
 {
 	int i;
-	int j;
 
 	i = 0;
-	j = 0;
 	if (str)
 		while (str[i] == '#' || str[i] == '.')
 		{

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "tetriminos.h"
+#include "../includes/tetriminos.h"
 
 char	**newmap(t_tetr *start, size_t plus)
 {

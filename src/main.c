@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "tetriminos.h"
+#include "../includes/tetriminos.h"
 
 void	mapprint(char **map)
 {

@@ -12,7 +12,7 @@
 
 #ifndef TETRIMINOS_H
 # define TETRIMINOS_H
-# include "libft/libft.h"
+# include "../libft/includes/libft.h"
 
 typedef struct			s_tetr
 {

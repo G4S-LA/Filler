@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "tetriminos.h"
+#include "../includes/tetriminos.h"
 
 void	tetr_add(t_tetr **root, int m[4][2], char c)
 {
