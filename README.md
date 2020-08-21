@@ -41,4 +41,6 @@ ABB.
 * Наличие '\n' в конце файла и в конце каждого квадрата
 * Наличие смежностей всех '#' с другими (каждый хештег соединен с другим). Правильный '#' должен иметь сумму 6 или 8 (для квадрата). Каждому хештегу присваевается такое значение, сколько он имеет рядом соседних '#'. Этот метод подсчета подробно описан в [блоге Beth Nenniger](https://medium.com/@bethnenniger/fillit-solving-for-the-smallest-square-of-tetrominos-c6316004f909).
 
-<img width="998" alt="possible tetramino" src="https://user-images.githubusercontent.com/55051470/90856324-5a685380-e38a-11ea-9ccc-f3c2f9658653.png">
+Валидные тетрамино:
+
+![possible_tetramino](https://github.com/G4S-LA/pictures/blob/master/Fillit/possible%20tetramino.png)
