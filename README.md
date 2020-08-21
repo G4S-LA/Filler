@@ -46,4 +46,4 @@ ABB.
 ![possible_tetramino](https://github.com/G4S-LA/pictures/blob/master/Fillit/possible%20tetramino.png)
 
 Затем мы находим сиволы '#' и превращаем их в координаты (x, y), записывая в структуру, которая является элементом связного списка. После нужно загнать тетримино в левый верхний угол с помощью функции `start_position()`
-[](https://github.com/G4S-LA/pictures/blob/master/Fillit/start_position.png)
+![](https://github.com/G4S-LA/pictures/blob/master/Fillit/start_position.png)
