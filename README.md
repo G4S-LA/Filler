@@ -54,3 +54,12 @@ ABB.
 ![](https://github.com/G4S-LA/pictures/blob/master/Fillit/sample_problem_1.png)
 ![](https://github.com/G4S-LA/pictures/blob/master/Fillit/sample_problem_2.png)
 ![](https://github.com/G4S-LA/pictures/blob/master/Fillit/sample_problem_3.png)
+
+## Как пользоваться?
+
+Собирать проект с помощью команды `make`.
+Запустить исполняемую программу
+```
+./fillit resources/example.txt
+```
+Файл *example.txt* можно заменить на свой.
