@@ -62,4 +62,4 @@ ABB.
 ```
 ./fillit resources/example.txt
 ```
-Файл *example.txt* можно заменить на свой.
+Файл [*example.txt*](https://github.com/G4S-LA/Fillit/blob/master/resources/example.txt) можно заменить на свой.
